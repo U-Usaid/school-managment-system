@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/student")
 public class StudentController {
     @Autowired
-    StudentRepository studentRepository;
+   private StudentRepository studentRepository;
 
     @GetMapping
     public List<Student> getAllStudent(){

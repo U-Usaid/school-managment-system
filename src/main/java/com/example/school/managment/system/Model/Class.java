@@ -18,4 +18,6 @@ public class Class {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
+    String name;
+
 }

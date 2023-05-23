@@ -1,7 +1,7 @@
 package com.example.school.managment.system.Controllers;
 
 import com.example.school.managment.system.Model.Course;
-import com.example.school.managment.system.Repositories.CourseRepository;
+import com.example.school.managment.system.Service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +13,10 @@ import java.util.List;
 @RequestMapping("/courses")
 public class CourseController {
     @Autowired
-    private CourseRepository courseRepository;
+    CourseService courseService;
 
     @GetMapping
     public List<Course> getAllCourse(){
-        return courseRepository.findAll();
+        return courseService.getCourses();
     }
 }

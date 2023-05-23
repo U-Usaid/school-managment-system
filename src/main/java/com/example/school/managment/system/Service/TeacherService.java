@@ -16,4 +16,7 @@ public class TeacherService {
         return teacherRepository.findAll();
     }
 
+    public Teacher addTeacher(Teacher teacher){
+        return teacherRepository.save(teacher);
+    }
 }

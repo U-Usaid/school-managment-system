@@ -1,5 +1,6 @@
 package com.example.school.managment.system.Controllers;
 
+import com.example.school.managment.system.Model.Class;
 import com.example.school.managment.system.Service.ClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -21,4 +22,14 @@ public class ClassController {
     public Class createClass(@RequestBody Class clas){
         return classService.addClass(clas);
     }
+
+
+
+
+
+
+
+
+
+
 }

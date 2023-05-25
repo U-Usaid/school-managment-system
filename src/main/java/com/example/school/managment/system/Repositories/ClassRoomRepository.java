@@ -2,7 +2,9 @@ package com.example.school.managment.system.Repositories;
 
 import com.example.school.managment.system.Model.ClassRoom;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ClassRepository extends JpaRepository<ClassRoom, Integer> {
+@Repository
+public interface ClassRoomRepository extends JpaRepository<ClassRoom, Integer> {
 
 }

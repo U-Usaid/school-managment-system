@@ -19,4 +19,12 @@ public class TeacherService {
     public Teacher addTeacher(Teacher teacher){
         return teacherRepository.save(teacher);
     }
+
+    public Teacher editTeacher(Teacher teacher){
+        return teacherRepository.save(teacher);
+    }
+
+    public void deleteTeacher(Integer id){
+        teacherRepository.deleteById(id);
+    }
 }

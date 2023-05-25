@@ -18,8 +18,9 @@ public class Teacher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     int id;
-    String teacherName;
-    String subject;
+    String name;
+    String phone;
+    String specialization;
 
 
 }

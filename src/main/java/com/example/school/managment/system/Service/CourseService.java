@@ -19,5 +19,12 @@ public class CourseService {
         return courseRepository.save(course);
     }
 
+    public Course editCourse(Course course){
+        return courseRepository.save(course);
+    }
+
+    public void deleteCourse(Integer id){
+        courseRepository.deleteById(id);
+    }
 
 }

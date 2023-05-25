@@ -23,5 +23,16 @@ public class StudentController {
         return studentService.addStudent(student);
     }
 
+    @PutMapping
+    public String editStudent(@RequestBody Student student){
+        Student editStudent = studentService.addStudent(student);
+        return "editing student id " + student.getId();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable Integer id){
+        studentService.deleteStudent(id);
+        return "Student id " + id + "deleted";
+    }
 
 }

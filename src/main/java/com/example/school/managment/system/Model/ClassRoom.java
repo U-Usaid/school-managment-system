@@ -17,9 +17,7 @@ public class ClassRoom {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    Integer id;
     int size;
-    int classRoom;
-
-
+    String classCode;
 }

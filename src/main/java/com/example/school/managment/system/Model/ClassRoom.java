@@ -13,12 +13,13 @@ import javax.persistence.Id;
 @Setter
 @Data
 @Entity
-public class Class {
+public class ClassRoom {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
-    String name;
+    int size;
+    int classRoom;
 
 
 }

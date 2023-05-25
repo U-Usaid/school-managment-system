@@ -24,5 +24,17 @@ public class CourseController {
     }
 
 
+    @PutMapping
+    public String editCourse(@RequestBody Course course){
+        Course editCourse = courseService.addCourse(course);
+        return "editing course id "+course.getId();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteCourse(@PathVariable Integer id){
+        courseService.deleteCourse(id);
+        return "course id "+ id + "deleted";
+    }
+
 
 }

@@ -22,4 +22,15 @@ public class TeacherController {
     public Teacher createTeacher(@RequestBody Teacher teacher){
         return teacherService.addTeacher(teacher);
     }
+
+    @PutMapping
+    public String editTeacher(@RequestBody Teacher teacher){
+        Teacher editTeacher = teacherService.addTeacher(teacher);
+        return "editing teacher id " + teacher.getId();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteTeacher(@PathVariable Integer id){
+        return "Teacher id " + id + "deleted";
+    }
 }

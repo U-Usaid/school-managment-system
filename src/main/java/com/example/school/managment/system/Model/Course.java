@@ -20,6 +20,7 @@ public class Course {
 
     int id;
     String courseName;
-    String courseType;
-    Date courseDuration;
+    String description;
+    String code;
+
 }
